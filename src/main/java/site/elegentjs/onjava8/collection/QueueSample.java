@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class QueueSample {
     public static void main(String[] args) {
-        Queue queue = new LinkedList();
+        Queue<Integer> queue = new LinkedList<>();
 
         Random rand = new Random(47);
         for (int i = 0; i < 100; i ++) {
@@ -37,7 +37,7 @@ public class QueueSample {
      * 打印队列
      * @param queue
      */
-    public static void print(Queue queue) {
+    public static void print(Queue<?> queue) {
         while (!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
